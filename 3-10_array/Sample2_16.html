@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sample2_16
+
+        </title>
+    </head>
+    <body>
+        <h2>配列要素の追加と削除</h2>
+        <script>
+            'use strict';
+            let fruits = ['リンゴ', 'バナナ', 'みかん'];
+            document.write( fruits + '<br><br>' );
+
+            // 配列の追加
+            document.write('---配列の末尾に追加する---<br>');
+            fruits.push('ぶどう', 'なし');
+            document.write( fruits + '<br><br>' );
+
+            // 配列要素を削除
+            document.write('---配列の末尾を削除する---<br>')
+            fruits.pop();
+            document.write( fruits + '<br><br>' );
+            
+            document.write('---配列の先頭に追加する---<br>')
+            fruits.unshift('すいか', 'もも');
+            document.write( fruits + '<br><br>' );
+            
+            document.write('---配列の先頭を削除する---<br>')
+            fruits.shift('すいか');
+            document.write( fruits + '<br><br>' );
+        </script>
+    </body>
+</html>

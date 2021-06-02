@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>\sample2_14</title>
+</head>
+<body>
+    <h2>1～100までの合計を求める</h2>
+    <p>合計が1000を超えたら加算を止める</p>
+    <script>
+        'use strict';
+        // 1～100までの合計を求める
+        // let sum = 0;
+        // for (let i = 0; i <= 100; i++) {
+        //     sum = sum + i;
+        //     console.log(`i=${i} sum=${sum}`);
+        // }
+        // document.write(sum + '<br>' );
+        
+        // 合計が1000を超えたら加算を止める
+        let sum = 0;
+        let i;
+        for (i = 0; i <= 100; i++) {
+            sum = sum + i;
+            if ( sum > 1000) {
+                break;
+            }
+            // console.log(`i=${i} sum=${sum}`);
+        }
+        document.write( i + '<br>' );
+        document.write( sum + '<br>' );
+    </script>
+</body>
+</html>
